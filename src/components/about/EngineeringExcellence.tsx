@@ -1,13 +1,12 @@
 import React from "react";
-import house from "../../../public/assets/images/house.png";
 
-function EngineeringExcellence() {
+const EngineeringExcellence: React.FC = () => {
   return (
     <>
       <div className="bg-blue">
         <div className="grid grid-cols-1 lg:grid-cols-2 large:px-24 lg:px-16 md:px-12 px-8 md:pb-20 w-full large:pt-20 lg:pt-16 md:pt-12 pt-10 items-center">
           <img
-            src={house.src}
+            src="/images/house.png"
             alt="car"
             className="w-auto mx-auto mb-8 lg:mb-0 large:pr-12 lg:pr-8 md:pr-6"
           />

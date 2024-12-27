@@ -1,6 +1,6 @@
 import React from "react";
 
-function ClientsReview() {
+const ClientsReview: React.FC = () => {
   return (
     <div className="py-12 text-white text-center bg-darkGray">
       <div className="lg:px-72 md:px-48 sm:px-32 px-24">

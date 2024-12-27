@@ -1,12 +1,12 @@
 "use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import northcraft from "../../../public/assets/icons/Northcraft.svg";
 import Image from "next/image";
-import { useState } from "react";
-import { HiBars3 } from "react-icons/hi2";
-import { motion, type Variants } from "framer-motion";
 import Button from "../../components/common/Button";
 import ActiveLink from "../../components/common/ActiveLink";
+import { HiBars3 } from "react-icons/hi2";
+import { motion, type Variants } from "framer-motion";
 import { ROUTES } from "../../routes";
 
 const animationVariants: Variants = {
@@ -14,8 +14,8 @@ const animationVariants: Variants = {
   closed: { opacity: 1, height: 0, width: "100%", overflow: "hidden" },
 };
 
-export default function Home() {
-  const [openMenu, setOpenMenu] = useState(false);
+const Navbar: React.FC = () => {
+  const [ openMenu, setOpenMenu ] = useState<boolean>(false);
 
   return (
     <>
@@ -48,9 +48,12 @@ export default function Home() {
         </div>
 
         <div className="sm:hidden ml-auto pr-7">
-          <button className="text-white" onClick={() => setOpenMenu((e) => !e)}>
+          <Button
+            className="text-white" 
+            onClick={() => setOpenMenu((e) => !e)}
+          >
             <HiBars3 className="h-7 w-7 text-white" />
-          </button>
+          </Button>
         </div>
       </nav>
 
@@ -74,3 +77,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Navbar;

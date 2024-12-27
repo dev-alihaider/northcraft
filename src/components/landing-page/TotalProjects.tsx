@@ -1,7 +1,7 @@
 import React from "react";
 import worker from "../../../public/assets/images/transparentBgWorkers.png";
 
-function TotalProjects() {
+const TotalProjects: React.FC = () => {
   return (
     <>
       <div className="bg-darkGray">
@@ -20,7 +20,7 @@ function TotalProjects() {
           </div>
         </div>
 
-        <div className="grid large:grid-cols-5 lg:grid-cols-6 md:grid-cols-5 w-full  md:px-0 px-5">
+        <div className="grid large:grid-cols-5 lg:grid-cols-6 md:grid-cols-5 w-full md:px-0 px-5">
           <div className="md:grid large:col-span-2 lg:col-span-3 md:col-span-2 hidden w-full h-auto bg-fill large:items-end items-center justify-center">
             <img
               src={worker.src}
@@ -29,7 +29,7 @@ function TotalProjects() {
             />
           </div>
 
-          <div className="md:grid md:col-span-3 text-white large:pt-28  pt-12 sm:pl-0 pl-6">
+          <div className="md:grid md:col-span-3 text-white large:pt-28 pt-12 sm:pl-0 pl-6">
             <div className="font-semibold sm:p-4 p-4">
               <h1 className="text-blue sm:text-left large:text-6xl lg:text-5xl text-4xl">
                 25 years

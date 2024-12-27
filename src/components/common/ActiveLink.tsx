@@ -1,25 +1,16 @@
 "use client";
-
+import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
-
-interface ActiveLinkProps {
-  href: string;
-  children: React.ReactNode;
-  activeClassName?: string;
-  className?: string;
-}
+import { ActiveLinkProps } from "./types";
 
 const ActiveLink: React.FC<ActiveLinkProps> = ({
   href,
   children,
-  activeClassName,
+  activeClassName = "",
   className = "",
 }) => {
-  const pathname = usePathname();
-
-  const isActive = pathname === href;
+  const isActive = usePathname() === href;
 
   return (
     <Link

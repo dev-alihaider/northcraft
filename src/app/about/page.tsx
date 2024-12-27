@@ -6,7 +6,7 @@ import FeaturedProject from "../../components/landing-page/FeaturedProject";
 import ClientsReview from "../../components/landing-page/ClientReview";
 import CivilConstruction from "../../components/landing-page/CivilConstruction";
 
-function Page() {
+const Page: React.FC = () => {
   return (
     <>
       <OurGoal />
@@ -17,6 +17,6 @@ function Page() {
       <CivilConstruction />
     </>
   );
-}
+};
 
 export default Page;

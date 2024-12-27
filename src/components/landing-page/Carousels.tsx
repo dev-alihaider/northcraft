@@ -1,11 +1,8 @@
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Image } from "../../utils/types";
+import Carousel from "react-multi-carousel";
+import { CarouselsProps } from "./types";
 
-type Props = {
-  images: Image[];
-};
-const Carousels: React.FC<Props> = ({ images }) => {
+const Carousels: React.FC<CarouselsProps> = ({ images }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -39,7 +36,7 @@ const Carousels: React.FC<Props> = ({ images }) => {
               <img
                 src={image.url}
                 alt={`Slide ${image.title}`}
-                className="w-80 h-96 sm:w-80 sm:h-96 md:w-96 md:h-[32rem] lg:w-[30.3rem] lg:h-[38.5rem]  object-cover rounded-2xl"
+                className="w-80 h-96 sm:w-80 sm:h-96 md:w-96 md:h-[32rem] lg:w-[30.3rem] lg:h-[38.5rem] object-cover rounded-2xl"
               />
               <div className=" text-white -translate-y-24 sm:space-y-2 sm:text-lg md:space-y-3 md:text-xl lg:space-y-4 lg:text-2xl">
                 <h3 className="font-medium whitespace-nowrap text-2xl text-center sm:text-xl md:text-2xl lg:text-3xl">

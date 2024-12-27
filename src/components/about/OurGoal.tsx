@@ -4,18 +4,18 @@ import car from "../../../public/assets/images/car.png";
 import buliding from "../../../public/assets/icons/building.svg";
 import drilling from "../../../public/assets/icons/drilling.svg";
 
-function OurGoal() {
+const OurGoal: React.FC = () => {
   return (
     <>
       <div>
         <img src={worker.src} alt="workers" className="w-full" />
         <div className="bg-darkGray">
-          <div className="grid grid-cols-1 large:px-24 w-full lg:px-16 md:px12 px-8 large:pt-28 lg:pt-20 md:pt-16  pt-12   items-center md:grid-cols-2">
+          <div className="grid grid-cols-1 large:px-24 w-full lg:px-16 md:px12 px-8 large:pt-28 lg:pt-20 md:pt-16  pt-12 items-center md:grid-cols-2">
             <div className="md:pr-10 mb-8 md:mb-0 min-w-1/2">
-              <div className="font-semibold  text-blue large:text-6xl  text-4xl">
+              <div className="font-semibold text-blue large:text-6xl text-4xl">
                 Our Goal
               </div>
-              <div className="font-semibold  text-blue  large:text-6xl  text-4xl">
+              <div className="font-semibold text-blue  large:text-6xl text-4xl">
                 To The Better
               </div>
               <p className="font-normal large:text-xl lg:text-lg text-base text-white pt-6 md:pt-10">
@@ -34,14 +34,14 @@ function OurGoal() {
           </div>
 
           <div className="text-white flex overflow-x-auto overflow-hidden gap-16 pt-16 pl-24 pb-4">
-            <img src={buliding.src} alt="building" className="w-32 h-32" />
-            <img src={drilling.src} alt="drilling icon" className="w-32 h-32" />
-            <img src={buliding.src} alt="building" className="w-32 h-32" />
-            <img src={drilling.src} alt="drilling icon" className="w-32 h-32" />
-            <img src={buliding.src} alt="building" className="w-32 h-32" />
-            <img src={drilling.src} alt="drilling icon" className="w-32 h-32" />
-            <img src={buliding.src} alt="building" className="w-32 h-32" />
-            <img src={drilling.src} alt="drilling icon" className="w-32 h-32" />
+            {
+              [0, 1, 2, 3].map((v, i)=> (
+                <span key={i}>
+                  <img src={buliding.src} alt="building" className="w-32 h-32" />
+                  <img src={drilling.src} alt="drilling icon" className="w-32 h-32" />
+                </span>
+              ))
+            }
           </div>
         </div>
       </div>

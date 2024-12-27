@@ -1,4 +1,4 @@
-import { Image, Step } from "../utils/types";
+import { Image, Step } from "./types";
 
 export const steps: Step[] = [
   { title: "Evaluation And Signing Of The Contract" },
@@ -7,7 +7,7 @@ export const steps: Step[] = [
   { title: "Delivering The Project To The Customer" },
 ];
 
-export const images: Image[] = [
+export const carouselsImages: Image[] = [
   {
     id: 1,
     url: "/assets/featured-project-images/img1.jpg",
@@ -195,3 +195,30 @@ export const images: Image[] = [
     category: "Building",
   },
 ];
+
+export const engineers = [
+    {
+      id: 1,
+      name: "Sofia Camalia",
+      role: "Engineer",
+      imageSrc: "/images/engineer.png",
+    },
+    {
+      id: 2,
+      name: "Sofia Camalia",
+      role: "Engineer",
+      imageSrc: "/images/engineer.png",
+    },
+    {
+      id: 3,
+      name: "Sofia Camalia",
+      role: "Engineer",
+      imageSrc: "/images/engineer.png",
+    },
+    {
+      id: 4,
+      name: "Sofia Camalia",
+      role: "Engineer",
+      imageSrc: "/images/engineer.png",
+    },
+  ];

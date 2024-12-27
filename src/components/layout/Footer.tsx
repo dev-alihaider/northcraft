@@ -4,16 +4,16 @@ import linkedin from "../../../public/assets/icons/Vector.svg";
 import instagram from "../../../public/assets/icons/Instagram.svg";
 import twitter from "../../../public/assets/icons/twitter.svg";
 import facebook from "../../../public/assets/icons/facebook.svg";
-
 import Link from "next/link";
 import Image from "next/image";
-function Footer() {
+
+const Footer: React.FC = () => {
   return (
-    <div className="bg-darkGray ">
+    <div className="bg-darkGray">
       <div className="lg:px-28 lg:pt-12 md:px-16 md:pt-6 px-8 pt-3">
         <div className="lg:flex items-center w-full">
           <h1 className="font-unlock text-white font-normal text-4xl">
-            {" "}
+            &nbsp;
             NORTHCRAFT
           </h1>
           <div className="ml-auto items-center sm:flex sm:pt-0 pt-2">
@@ -35,7 +35,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-8 text-white lg:gap-12 sm:gap-x-12  gap-x-8 gap-y-4 ">
+        <div className="grid grid-cols-8 text-white lg:gap-12 sm:gap-x-12 gap-x-8 gap-y-4 ">
           <div className=" lg:col-span-3 md:col-span-4 col-span-8">
             <h1 className="font-medium text-xl py-4">About Us</h1>
             <p className="font-normal text-sm leading-5">

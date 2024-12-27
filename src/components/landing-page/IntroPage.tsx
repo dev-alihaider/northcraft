@@ -2,7 +2,7 @@ import builders from "../../../public/assets/images/builders.png";
 import arrow from "../../../public/assets/icons/arrow-right-circle.svg";
 import Button from "../../components/common/Button";
 
-export default function IntroPage() {
+const IntroPage: React.FC = () => {
   return (
     <>
       <div
@@ -11,7 +11,7 @@ export default function IntroPage() {
           backgroundImage: `url(${builders.src})`,
         }}
       >
-        <div className="lg:py-48 md:py-32 sm:py-32 md:px-28 sm:px-20  py-20 px-6 text-white">
+        <div className="lg:py-48 md:py-32 sm:py-32 md:px-28 sm:px-20 py-20 px-6 text-white">
           <h1 className="text-6xl font-semibold">We Prepare</h1>
           <h1 className="text-6xl font-semibold">
             For The <span className="text-blue">Future</span>
@@ -21,13 +21,13 @@ export default function IntroPage() {
             building maintance services for you.
           </p>
           <div className="pt-16 ">
-            <Button className="flex items-center gap-2 sm:py-4 py-2  sm:px-6 px-4 rounded-xl bg-blue text-darkGray sm:text-2xl text-xl font-medium">
+            <Button className="flex items-center gap-2 sm:py-4 py-2 sm:px-6 px-4 rounded-xl bg-blue text-darkGray sm:text-2xl text-xl font-medium">
               <span>Our Services</span>
               <img
                 src={arrow.src}
                 alt="right arrow"
                 className="sm:w-6 sm:h-6 w-4 h-4"
-              />{" "}
+              />&nbsp;
             </Button>
           </div>
         </div>
@@ -35,3 +35,5 @@ export default function IntroPage() {
     </>
   );
 }
+
+export default IntroPage;

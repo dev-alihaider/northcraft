@@ -1,14 +1,15 @@
 "use client";
+import "react-multi-carousel/lib/styles.css";
 import React, { useState } from "react";
 import blackDot from "../../../public/assets/icons/BlackDot.svg";
-import { images, steps } from "../../utils/Constant";
-import "react-multi-carousel/lib/styles.css";
 import Carousels from "../../components/landing-page/Carousels";
 import { Image } from "../../utils/types";
+import { carouselsImages, steps } from "../../utils/Constants";
+import Button from "../common/Button";
 
 const FeaturedProject: React.FC = () => {
-  const [activeButton, setActiveButton] = useState<string>("All Works");
-  const [img, setImg] = useState<Image[]>(images);
+  const [ activeButton, setActiveButton ] = useState<string>("All Works");
+  const [ images, setImages ] = useState<Image[]>(carouselsImages);
   const buttons = [
     "All Works",
     "Construction",
@@ -21,10 +22,10 @@ const FeaturedProject: React.FC = () => {
   const handleButtonClick = (label: string) => {
     setActiveButton(label);
     if (label === "All Works") {
-      setImg(images);
+      setImages(images);
     } else {
       const filteredImages = images.filter((image) => image.category === label);
-      setImg(filteredImages);
+      setImages(filteredImages);
     }
   };
   return (
@@ -34,7 +35,7 @@ const FeaturedProject: React.FC = () => {
           {steps.map(({ title }, index: number) => (
             <div
               key={index}
-              className="sm:ml-0 ml-3 sm:border-l-0 border-l-2  border-black   sm:border-none flex flex-col sm:text-center sm:items-center sm:justify-between justify-start"
+              className="sm:ml-0 ml-3 sm:border-l-0 border-l-2  border-black sm:border-none flex flex-col sm:text-center sm:items-center sm:justify-between justify-start"
             >
               <div className="sm:px-0 px-5">{title}</div>
               <div className="sm:px-0 px-6  font-medium lg:text-sm text-xs min-mt-3 mt-auto">
@@ -62,19 +63,20 @@ const FeaturedProject: React.FC = () => {
           Featured Project
         </div>
         <div className=" flex gap-2 sm:ml-auto pl-4 font-semibold large:text-lg text-base sm:text-left text-center text-white flex-wrap">
-          {buttons.map((label) => (
-            <button
-              key={label}
+          {buttons.map((label, i: number) => (
+            <Button
+              key={i}
               onClick={() => handleButtonClick(label)}
               className={` ${activeButton === label ? "text-black" : ""}`}
             >
               {label}
-            </button>
+            </Button>
           ))}
         </div>
       </div>
 
-      <Carousels images={img} />
+      <Carousels images={images} />
+
       <div className="font-semibold text-xl w-full text-end">
         Explore All Projects
       </div>

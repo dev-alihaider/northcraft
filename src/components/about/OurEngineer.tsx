@@ -1,7 +1,7 @@
 import React from "react";
-import engineerImg from "../../../public/assets/images/engineer.png";
+import { engineers } from "../../utils/Constants";
 
-function OurEngineer() {
+const OurEngineer: React.FC = () => {
   return (
     <>
       <div className="bg-darkGray">
@@ -12,58 +12,22 @@ function OurEngineer() {
             </h1>
           </div>
           <div className="gap-12 md:gap-8 sm:gap-4 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 pt-12 w-full justify-center items-center">
-            <div className="text-center text-white flex flex-col justify-center items-center w-full">
-              <img
-                className="max-w-full h-auto"
-                src={engineerImg.src}
-                alt="Engineer"
-              />
-              <p className="font-normal text-xl sm:text-lg pt-4 text-liteGray">
-                Engineer
-              </p>
-              <p className="font-semibold text-4xl sm:text-2xl">
-                Sofia Camalia
-              </p>
-            </div>
-            <div className="text-center text-white flex flex-col justify-center items-center w-full">
-              <img
-                className="max-w-full h-auto"
-                src={engineerImg.src}
-                alt="Engineer"
-              />
-              <p className="font-normal text-xl sm:text-lg pt-4 text-liteGray">
-                Engineer
-              </p>
-              <p className="font-semibold text-4xl sm:text-2xl">
-                Sofia Camalia
-              </p>
-            </div>
-            <div className="text-center text-white flex flex-col justify-center items-center w-full">
-              <img
-                className="max-w-full h-auto"
-                src={engineerImg.src}
-                alt="Engineer"
-              />
-              <p className="font-normal text-xl sm:text-lg pt-4 text-liteGray">
-                Engineer
-              </p>
-              <p className="font-semibold text-4xl sm:text-2xl">
-                Sofia Camalia
-              </p>
-            </div>
-            <div className="text-center text-white flex flex-col justify-center items-center w-full">
-              <img
-                className="max-w-full h-auto"
-                src={engineerImg.src}
-                alt="Engineer"
-              />
-              <p className="font-normal text-xl sm:text-lg pt-4 text-liteGray">
-                Engineer
-              </p>
-              <p className="font-semibold text-4xl sm:text-2xl">
-                Sofia Camalia
-              </p>
-            </div>
+            {engineers.map((engineer) => (
+              <div
+                key={engineer.id}
+                className="text-center text-white flex flex-col justify-center items-center w-full"
+              >
+                <img
+                  className="max-w-full h-auto"
+                  src={engineer.imageSrc}
+                  alt={engineer.role}
+                />
+                <p className="font-normal text-xl sm:text-lg pt-4 text-liteGray">
+                  {engineer.role}
+                </p>
+                <p className="font-semibold text-4xl sm:text-2xl">{engineer.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
