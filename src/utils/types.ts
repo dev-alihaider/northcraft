@@ -1,10 +1,10 @@
 export interface Step {
-    title: string;
+  title: string;
 }
 
 export interface Image {
-    id: number;
-    url: string;
-    title: string;
-    category: string;
+  id: number;
+  url: string;
+  title: string;
+  category: string;
 }
