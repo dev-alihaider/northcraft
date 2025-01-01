@@ -40,5 +40,5 @@ export default {
       backgroundColor: ["active"],
     },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require("tailwind-scrollbar-hide")],
 } satisfies Config;

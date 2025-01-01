@@ -6,16 +6,15 @@ import ProjectsShowcase from "../../components/shared/ProjectsShowcase";
 import ImageGallery from "../../components/about/ImageGallary";
 
 const Page: React.FC = () => {
-    return (
-        <>
-            <GoalVision/>
-            <ImageGallery/>
-            <EngineeringTeam/>
-            <ProjectsShowcase/>
-            <EngineeringStandards/>
-
-        </>
-    );
+  return (
+    <>
+      <GoalVision />
+      <ImageGallery />
+      <EngineeringTeam />
+      <ProjectsShowcase />
+      <EngineeringStandards />
+    </>
+  );
 };
 
 export default Page;

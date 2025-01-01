@@ -7,16 +7,16 @@ import ImageGallery from "../components/about/ImageGallary";
 import ProjectsShowcase from "../components/shared/ProjectsShowcase";
 
 const Home: React.FC = () => {
-    return (
-        <div className="">
-            <HeroSection/>
-            <FeatureListCard/>
-            <StatisticsSection/>
-            <ImageGallery/>
-            <ProjectsShowcase />
-            <KeyFeatures/>
-        </div>
-    );
+  return (
+    <>
+      <HeroSection />
+      <FeatureListCard />
+      <StatisticsSection />
+      <ImageGallery />
+      <ProjectsShowcase />
+      <KeyFeatures />
+    </>
+  );
 };
 
 export default Home;

@@ -1,4 +1,4 @@
-import {Image} from "./types";
+import { Image } from "./types";
 
 export const statistics = [
   { value: "12+", label: "Years of Experience" },
@@ -104,6 +104,3 @@ export const carouselsImages: Image[] = [
     category: "Heritage works",
   },
 ];
-
-
-

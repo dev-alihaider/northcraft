@@ -1,5 +1,5 @@
 import React from "react";
-import {engineers} from "./constants";
+import { engineers } from "./constants";
 
 const EngineeringTeam: React.FC = () => {
   return (
@@ -25,7 +25,9 @@ const EngineeringTeam: React.FC = () => {
                 <p className="font-normal text-xl sm:text-lg pt-4 text-liteGray">
                   {engineer.role}
                 </p>
-                <p className="font-semibold text-4xl sm:text-2xl">{engineer.name}</p>
+                <p className="font-semibold text-4xl sm:text-2xl">
+                  {engineer.name}
+                </p>
               </div>
             ))}
           </div>
@@ -33,6 +35,6 @@ const EngineeringTeam: React.FC = () => {
       </div>
     </>
   );
-}
+};
 
 export default EngineeringTeam;

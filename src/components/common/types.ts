@@ -8,7 +8,7 @@ export interface ActiveLinkProps {
 export type ButtonProps = {
   children: React.ReactNode;
   className?: string;
-  type?: 'button' | 'submit' | 'reset';
+  type?: "button" | "submit" | "reset";
   onClick?: () => void;
 };
 
@@ -16,7 +16,7 @@ export type InputFieldProps = {
   className?: string;
   placeholder?: string;
   name?: string;
-  type?: 'text' | 'password'|'number';
+  type?: "text" | "password" | "number";
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value?: string | number;
   required?: boolean;
