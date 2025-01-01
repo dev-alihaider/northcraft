@@ -1,11 +1,16 @@
 import React from "react";
 import { InputFieldProps } from "./types";
 
-const Input: React.FC<InputFieldProps> = ({ 
+const Input: React.FC<InputFieldProps> = ({
   className = "",
-  placeholder = "" 
+  placeholder = "" ,
+  name,
+  type,
+  onChange,
+  value,
+  required=false,
 }) => {
-  return <input placeholder={placeholder} className={className} />;
+  return <input name={name} type={type} value={value} onChange={onChange} placeholder={placeholder} className={className} required={required} />;
 };
 
 export default Input;

@@ -8,7 +8,7 @@ export const ROUTES = {
     label: "About",
   },
   SERVICES: {
-    path: "/services",
+    path: "/service",
     label: "Services",
   },
   CONTACT: {

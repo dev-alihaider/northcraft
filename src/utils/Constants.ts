@@ -1,10 +1,9 @@
-import { Image, Step } from "./types";
+import {Image} from "./types";
 
-export const steps: Step[] = [
-  { title: "Evaluation And Signing Of The Contract" },
-  { title: "Preparation Of The Work Plan" },
-  { title: "Implementation Of Quality Works" },
-  { title: "Delivering The Project To The Customer" },
+export const statistics = [
+  { value: "12+", label: "Years of Experience" },
+  { value: "378+", label: "Projects Completed" },
+  { value: "69+", label: "Winning Global Award" },
 ];
 
 export const carouselsImages: Image[] = [
@@ -12,7 +11,7 @@ export const carouselsImages: Image[] = [
     id: 1,
     url: "/assets/featured-project-images/img1.jpg",
     title: "Residential",
-    category: "Building",
+    category: "New builds",
   },
   {
     id: 2,
@@ -24,201 +23,87 @@ export const carouselsImages: Image[] = [
     id: 3,
     url: "/assets/featured-project-images/img3.jpg",
     title: "Townhomes",
-    category: "Interior",
+    category: "Extensions",
   },
   {
     id: 4,
     url: "/assets/featured-project-images/img4.jpg",
     title: "Multi Family House",
-    category: "Luxury",
+    category: "New builds",
   },
   {
     id: 5,
     url: "/assets/featured-project-images/img5.png",
     title: "Luxury Villas",
-    category: "Architecture",
+    category: "Decks",
   },
   {
     id: 6,
     url: "/assets/featured-project-images/img6.png",
     title: "Cottages",
-    category: "Luxury",
+    category: "Fences",
   },
   {
     id: 7,
     url: "/assets/featured-project-images/img7.png",
     title: "Urban Flats",
-    category: "Renovations",
+    category: "Retaining walls",
   },
   {
     id: 8,
     url: "/assets/featured-project-images/img8.png",
     title: "Modern Condos",
-    category: "Construction",
+    category: "Heritage works",
   },
   {
     id: 9,
     url: "/assets/featured-project-images/img9.png",
     title: "Eco Homes",
-    category: "Architecture",
+    category: "Maintence",
   },
   {
     id: 10,
     url: "/assets/featured-project-images/img10.png",
     title: "Family Residences",
-    category: "Building",
-  },
-  {
-    id: 10,
-    url: "/assets/featured-project-images/img10.png",
-    title: "Family Residences",
-    category: "Building",
+    category: "Contracting",
   },
   {
     id: 11,
-    url: "/assets/featured-project-images/img1.jpg",
+    url: "/assets/featured-project-images/outdoorStep.png",
     title: "Residential",
-    category: "Building",
+    category: "Contracting",
   },
   {
     id: 12,
-    url: "/assets/featured-project-images/img2.jpg",
+    url: "/assets/featured-project-images/outdoorSteps.png",
     title: "Apartments",
     category: "Renovations",
   },
   {
     id: 13,
-    url: "/assets/featured-project-images/img3.jpg",
+    url: "/assets/featured-project-images/outdoorSteps2.png",
     title: "Townhomes",
-    category: "Interior",
+    category: "New builds",
   },
   {
     id: 14,
-    url: "/assets/featured-project-images/img4.jpg",
+    url: "/assets/featured-project-images/steps.png",
     title: "Multi Family House",
-    category: "Luxury",
+    category: "Maintenance",
   },
   {
     id: 15,
-    url: "/assets/featured-project-images/img5.png",
-    title: "Luxury Villas",
-    category: "Architecture",
+    url: "/assets/featured-project-images/woodenCeiling2.png",
+    title: "Cottages",
+    category: "Retaining walls",
   },
   {
     id: 16,
-    url: "/assets/featured-project-images/img6.png",
-    title: "Cottages",
-    category: "Luxury",
-  },
-  {
-    id: 17,
-    url: "/assets/featured-project-images/img7.png",
+    url: "/assets/featured-project-images/yard.png",
     title: "Urban Flats",
-    category: "Renovations",
-  },
-  {
-    id: 18,
-    url: "/assets/featured-project-images/img8.png",
-    title: "Modern Condos",
-    category: "Construction",
-  },
-  {
-    id: 19,
-    url: "/assets/featured-project-images/img9.png",
-    title: "Eco Homes",
-    category: "Architecture",
-  },
-  {
-    id: 20,
-    url: "/assets/featured-project-images/img10.png",
-    title: "Family Residences",
-    category: "Building",
-  },
-  {
-    id: 21,
-    url: "/assets/featured-project-images/img1.jpg",
-    title: "Residential",
-    category: "Building",
-  },
-  {
-    id: 22,
-    url: "/assets/featured-project-images/img2.jpg",
-    title: "Apartments",
-    category: "Renovations",
-  },
-  {
-    id: 23,
-    url: "/assets/featured-project-images/img3.jpg",
-    title: "Townhomes",
-    category: "Interior",
-  },
-  {
-    id: 24,
-    url: "/assets/featured-project-images/img4.jpg",
-    title: "Multi Family House",
-    category: "Luxury",
-  },
-  {
-    id: 25,
-    url: "/assets/featured-project-images/img5.png",
-    title: "Luxury Villas",
-    category: "Architecture",
-  },
-  {
-    id: 26,
-    url: "/assets/featured-project-images/img6.png",
-    title: "Cottages",
-    category: "Luxury",
-  },
-  {
-    id: 27,
-    url: "/assets/featured-project-images/img7.png",
-    title: "Urban Flats",
-    category: "Renovations",
-  },
-  {
-    id: 28,
-    url: "/assets/featured-project-images/img8.png",
-    title: "Modern Condos",
-    category: "Construction",
-  },
-  {
-    id: 29,
-    url: "/assets/featured-project-images/img9.png",
-    title: "Eco Homes",
-    category: "Architecture",
-  },
-  {
-    id: 30,
-    url: "/assets/featured-project-images/img10.png",
-    title: "Family Residences",
-    category: "Building",
+    category: "Heritage works",
   },
 ];
 
-export const engineers = [
-    {
-      id: 1,
-      name: "Sofia Camalia",
-      role: "Engineer",
-      imageSrc: "/images/engineer.png",
-    },
-    {
-      id: 2,
-      name: "Sofia Camalia",
-      role: "Engineer",
-      imageSrc: "/images/engineer.png",
-    },
-    {
-      id: 3,
-      name: "Sofia Camalia",
-      role: "Engineer",
-      imageSrc: "/images/engineer.png",
-    },
-    {
-      id: 4,
-      name: "Sofia Camalia",
-      role: "Engineer",
-      imageSrc: "/images/engineer.png",
-    },
-  ];
+
+
