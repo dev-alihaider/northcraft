@@ -20,7 +20,8 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ["var(--font-poppins)", "sans-serif"],
+        // sans: ["var(--font-poppins)", "sans-serif"],
+        sans: ["var(--font-inter)", "sans-serif"],
         comforter: ["var(--font-comforter)", "cursive"],
         unlock: ["Unlock", "sans-serif"],
         poppins: ["var(--font-poppins)", "sans-serif"],

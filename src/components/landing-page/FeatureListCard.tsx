@@ -8,8 +8,8 @@ const FeatureListCard: React.FC = () => {
       <div className="bg-blue sm:rounded-xl inline-block sm:w-fit sm:h-fit w-full  ">
         <div className="large:py-11 large:px-12 sm:py-8 sm:px-8 py-8 px-4">
           {[
+            "Highly Professional Staff",
             "Quality Control System, 100% Satisfaction Guarantee",
-            "Highly Professional Staff, Accurate Testing Processes",
             "Unrivalled Workmanship, Professional and Qualified",
           ].map((value: string, i: number) => (
             <div className="flex gap-2 p-1" key={i}>

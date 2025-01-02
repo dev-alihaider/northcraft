@@ -7,12 +7,7 @@ export const steps: Step[] = [
   { title: "Delivering The Project To The Customer" },
 ];
 
-export const features = [
-  { label: "Professional Staff" },
-  { label: "100% Satisfaction" },
-  { label: "Accurate Testing" },
-  { label: "Transparent Pricing" },
-];
+
 
 export const buttons = [
   "All Works",

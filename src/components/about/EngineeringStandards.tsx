@@ -25,17 +25,6 @@ const EngineeringStandards: React.FC = () => {
               member of the spearfishing community, Northcraft Projects offers
               sponsorship to local spearfishing events and competitions.
             </p>
-
-            <div className="pt-5 sm:flex grid md:pt-6 sm:pt-8 sm:gap-6 max-w-full lg:justify-start justify-center">
-              {statistics.map((stat, index: number) => (
-                <div key={index} className="flex items-center gap-2">
-                  <span className="font-semibold large:text-5xl text-3xl">
-                    {stat.value}
-                  </span>
-                  <p className="large:text-sm text-xs">{stat.label}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

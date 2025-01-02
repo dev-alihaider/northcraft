@@ -4,6 +4,7 @@ import carcrop from "../../../public/assets/images/crop2.jpeg";
 import northcraftMan from "../../../public/assets/images/northcraftMan.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import carFull from "../../../public/assets/images/carFull.jpeg";
 
 const GoalVision: React.FC = () => {
   const { ref, inView } = useInView({
