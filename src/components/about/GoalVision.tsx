@@ -4,13 +4,13 @@ import carcrop from "../../../public/assets/images/crop2.jpeg";
 import northcraftMan from "../../../public/assets/images/northcraftMan.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import carFull from "../../../public/assets/images/carFull.jpeg";
 
 const GoalVision: React.FC = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
   return (
     <>
       <div>
@@ -20,8 +20,8 @@ const GoalVision: React.FC = () => {
             alt="Image"
             className="w-full h-full object-cover object-center -mt-36"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-60 text-red-400">
-            About
+          <div className="absolute inset-0 bg-black bg-opacity-60">
+
           </div>
         </div>
         <div className="bg-darkGray">

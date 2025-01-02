@@ -1,5 +1,4 @@
 import React from "react";
-import { statistics } from "../../utils/constants";
 
 const EngineeringStandards: React.FC = () => {
   return (

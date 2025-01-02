@@ -1,11 +1,10 @@
 "use client";
 import "react-multi-carousel/lib/styles.css";
 import React, { useState } from "react";
-import blackDot from "../../../public/assets/icons/BlackDot.svg";
 import FeaturedCarousel from "./FeaturedCarousel";
 import { Image } from "../../utils/types";
 import Button from "../common/Button";
-import { buttons, steps } from "./constants";
+import { buttons } from "./constants";
 import { carouselsImages } from "../../utils/constants";
 
 const ProjectsShowcase: React.FC = () => {
@@ -40,9 +39,7 @@ const ProjectsShowcase: React.FC = () => {
           ))}
         </div>
       </div>
-
       <FeaturedCarousel images={images} />
-
     </div>
   );
 };

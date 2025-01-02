@@ -20,7 +20,7 @@ export const responsive = {
 const FeaturedCarousel: React.FC<CarouselsProps> = ({ images }) => {
   return (
     <>
-      <div className="relative bg-carousel pt-12   sm:pr sm:pl-16 md:pl-24 lg:pl-32">
+      <div className="relative bg-carousel pt-12 sm:pr sm:pl-16 md:pl-24 lg:pl-32">
         <Carousel
           responsive={responsive}
           keyBoardControl={false}

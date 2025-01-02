@@ -6,6 +6,7 @@ import { FormDataProps } from "../shared/types";
 import { toast } from "react-hot-toast";
 
 export const ContactUsForm: React.FC = () => {
+
   const [formData, setFormData] = useState<FormDataProps>({
     name: "",
     email: "",
@@ -13,6 +14,7 @@ export const ContactUsForm: React.FC = () => {
     service: "",
     description: "",
   });
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement

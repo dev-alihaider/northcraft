@@ -11,7 +11,6 @@ const Footer: React.FC = () => {
             NORTHCRAFT
           </h1>
         </div>
-
         <div className="grid grid-cols-4 text-white gap-x-12 gap-y-4 ">
           <div className=" md:col-span-2 col-span-4">
             <h1 className="font-medium text-xl py-4">Excellence Assured</h1>

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import checkIcon from "../../../public/assets/icons/CheckCircleFill.svg";
 

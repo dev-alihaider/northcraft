@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
-import {motion} from "framer-motion";
-import {useInView} from "react-intersection-observer";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import logoImg from "../../../public/assets/images/NorthcraftLogo.png"
 
 const StatisticsSection: React.FC = () => {
     const {ref, inView} = useInView({
         triggerOnce: true, threshold: 0.1,
     });
+
     return (<>
         <div className="bg-darkGray overflow-x-hidden">
-
             <div
                 className="grid lg:grid-cols-5 md:grid-cols-5 w-full md:px-0 px-5 large:py-28 py-12"
                 ref={ref}
