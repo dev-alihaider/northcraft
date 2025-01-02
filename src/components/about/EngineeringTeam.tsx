@@ -1,10 +1,10 @@
 import React from "react";
-import { engineers } from "./constants";
+// import { engineers } from "./constants";
 
 const EngineeringTeam: React.FC = () => {
   return (
     <>
-      <div className="bg-darkGray">
+      {/* <div className="bg-darkGray">
         <div className="large:p-24 lg:p-20 p-12">
           <div className="w-full justify-center">
             <h1 className="font-semibold large:text-6xl text-4xl text-white text-center">
@@ -32,7 +32,7 @@ const EngineeringTeam: React.FC = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
