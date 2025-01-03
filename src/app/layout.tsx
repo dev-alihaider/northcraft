@@ -1,9 +1,9 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
-import {Comforter_Brush, Inter, Poppins, Unlock} from "next/font/google";
-import {Toaster} from "react-hot-toast";
+import { Comforter_Brush, Inter, Poppins, Unlock } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
     subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-inter",
@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: "North Craft Construction - Expert Construction Services",
   description:
     "North Craft Construction provides top-notch construction services, specializing in residential, commercial, and industrial projects. We are committed to delivering quality craftsmanship, timely project completion, and customer satisfaction.",
+    icons: {
+        icon: "/assets/icons/northcraft.svg",
+    },
 };
 
 export default function RootLayout({children,}: {

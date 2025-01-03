@@ -20,4 +20,6 @@ export type InputFieldProps = {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value?: string | number;
   required?: boolean;
+  readOnly?: boolean;
+  disabled?: boolean;
 };

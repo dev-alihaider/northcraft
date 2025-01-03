@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import {motion} from "framer-motion";
+import {useInView} from "react-intersection-observer";
 import logoImg from "../../../public/assets/images/NorthcraftLogo.png"
 
 const StatisticsSection: React.FC = () => {

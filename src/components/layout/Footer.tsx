@@ -15,10 +15,9 @@ const Footer: React.FC = () => {
           <div className=" md:col-span-2 col-span-4">
             <h1 className="font-medium text-xl py-4">Excellence Assured</h1>
             <p className="font-normal text-sm leading-5">
-              We have the confidence to provide the best service for you, with
-              the support of Professional and Certified HR that we currently
-              have and the high-quality materials we use and structured work
-              techniques, we will be able to realize timely completion of work.
+              We have the confidence to provide the best service for you, with the support of professional and certified
+              staff that we currently have and the high-quality materials we use and structured work techniques, we will
+              be able to realize timely completion of work.
             </p>
           </div>
           <div className="lg:col-span-1 sm:col-span-2 col-span-4">

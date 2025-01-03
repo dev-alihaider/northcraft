@@ -10,8 +10,7 @@ function ContactInfo() {
         <div className="large:pt-10 lg:pt-6 sm:pt-4 pt-2">
           <h1 className="font-normal large:text-xl text-lg ">Our Location</h1>
           <p className="font-light large:text-base lg:text-sm text-xs pt-1">
-            18 Office Park Building 21th Floor Unit C. Jl. TB Simatupang Kav.
-            18, Jakarta Selatan ,12520
+            2802 statehighway 10 waipapa, far north
           </p>
         </div>
         <div className="large:pt-6  sm:pt-4 pt-2 ">
@@ -26,7 +25,7 @@ function ContactInfo() {
           <p className="font-light large:text-base  pt-1 lg:text-sm text-xs">
             Monday - Friday
             <br />
-            09:00 AM - 06:00 PM
+            07:30 AM - 05:00 PM
           </p>
         </div>
         <div className="large:pt-6  sm:pt-4 pt-2 ">
