@@ -1,4 +1,3 @@
-
 export const buttons = [
   "All Works",
   "Renovations",
@@ -11,3 +10,11 @@ export const buttons = [
   "Maintenance",
   "Contracting",
 ];
+
+export const initialFormData = {
+  name: "",
+  email: "",
+  phoneNumber: "",
+  service: "",
+  description: "",
+};

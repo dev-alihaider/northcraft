@@ -8,8 +8,7 @@ const HeroSection: React.FC = () => {
         style={{
           backgroundImage: `linear-gradient(to  bottom, rgba(25, 26, 25, 1), rgba(0, 0, 0, 0)),url(${carFull.src})`,
         }}
-      >
-      </div>
+      ></div>
     </>
   );
 };

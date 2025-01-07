@@ -20,9 +20,7 @@ const GoalVision: React.FC = () => {
             alt="Image"
             className="w-full h-full object-cover object-center -mt-36"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-60">
-
-          </div>
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         </div>
         <div className="bg-darkGray">
           <div

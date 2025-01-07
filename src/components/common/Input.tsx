@@ -4,14 +4,13 @@ import { InputFieldProps } from "./types";
 const Input: React.FC<InputFieldProps> = ({
   className = "",
   placeholder = "",
-  name="",
-  type="",
+  name = "",
+  type = "",
   onChange = () => {},
   value,
   required = false,
-  readOnly=false,
+  readOnly = false,
   disabled = false,
-
 }) => {
   return (
     <input

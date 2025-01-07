@@ -35,7 +35,7 @@ function ContactInfo() {
         </div>
         <Link href="/contact">
           <Button className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg text-base py-3 sm:mb-12 mb-8 font-normal large:text-xl  w-full bg-darkGray large:py-6 sm:py-4 text-center rounded-2xl large:mt-10 mt-6">
-           Contact Us
+            Contact Us
           </Button>
         </Link>
       </div>

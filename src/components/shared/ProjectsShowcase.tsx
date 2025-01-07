@@ -10,6 +10,7 @@ import { carouselsImages } from "../../utils/constants";
 const ProjectsShowcase: React.FC = () => {
   const [activeButton, setActiveButton] = useState<string>("All Works");
   const [images, setImages] = useState<Image[]>(carouselsImages);
+
   const handleButtonClick = (label: string) => {
     setActiveButton(label);
     if (label === "All Works") {
@@ -21,6 +22,7 @@ const ProjectsShowcase: React.FC = () => {
       setImages(filteredImages);
     }
   };
+
   return (
     <div className="bg-blue py-10">
       <div className="flex sm:flex-row flex-col items-center sm:pt-34 py-2 large:px-28 lg:px-20 sm:px-12 px-6">
