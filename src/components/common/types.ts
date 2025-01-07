@@ -10,6 +10,7 @@ export type ButtonProps = {
   className?: string;
   type?: "button" | "submit" | "reset";
   onClick?: () => void;
+  disabled?: boolean;
 };
 
 export type InputFieldProps = {

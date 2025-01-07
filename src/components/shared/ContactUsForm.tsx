@@ -6,6 +6,9 @@ import { FormDataProps } from "../shared/types";
 import { toast } from "react-hot-toast";
 import chevronDown from "../../../public/assets/icons/ChevronDown.svg";
 import { buttons } from "./constants";
+import emailjs from "emailjs-com";
+import {config} from "../../../config";
+
 
 export const ContactUsForm: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -16,6 +19,7 @@ export const ContactUsForm: React.FC = () => {
     service: "",
     description: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleOptionClick = (option) => {
     setFormData({ ...formData, service: option });
@@ -30,21 +34,25 @@ export const ContactUsForm: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (
-    event,
-  ) => {
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      setIsLoading(true);
+      const result = await emailjs.send(
+          config.emailjsServiceId,
+          config.emailjsTemplateId,
+          {
+            name: formData.name,
+            email: formData.email,
+            phoneNumber: formData.phoneNumber,
+            service: formData.service,
+            description: formData.description,
+          },
+            config.emailjsPublicKey,
+          );
 
-      if (response.ok) {
+      if (result.status === 200) {
         toast.success("Submitted Successfully", {
           position: "bottom-center",
         });
@@ -55,16 +63,14 @@ export const ContactUsForm: React.FC = () => {
           service: "",
           description: "",
         });
-      } else {
-        toast.error("Failed to Submit", {
-          position: "bottom-center",
-        });
       }
     } catch (error) {
-      console.error("Error during form submission:", error);
+      console.error("Error during email submission:", error);
       toast.error("An error occurred during submission", {
         position: "bottom-center",
       });
+    }finally {
+      setIsLoading(false);
     }
   };
 
@@ -77,7 +83,7 @@ export const ContactUsForm: React.FC = () => {
         <p className="font-normal large:text-xl lg:text-lg sm:text-base text-sm large:pt-6 lg:pt-4 pt-2 text-center sm:text-left">
           Complete control over products allow us to our customers the best
           quality prices and services. We take great pride in everything that we
-          do in Jhontraktor
+          do.
         </p>
         <form onSubmit={handleSubmit}>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-5 ">
@@ -151,8 +157,9 @@ export const ContactUsForm: React.FC = () => {
             />
             </div>
             <Button
+                disabled={isLoading}
                 type="submit"
-                className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg large:mb-12 mb-8 font-normal large:text-xl sm:text-lg text-base py-3 w-full bg-darkGray large:py-6 sm:py-4 text-center rounded-2xl large:mt-6 mt-4"
+                className={`${isLoading && "text-black"} transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg large:mb-12 mb-8 font-normal large:text-xl sm:text-lg text-base py-3 w-full bg-darkGray large:py-6 sm:py-4 text-center rounded-2xl large:mt-6 mt-4`}
             >
               Submit Request
             </Button>
