@@ -1,22 +1,18 @@
 import React from "react";
-import EngineeringExcellence from "../../components/about/EngineeringExcellence";
-import OurGoal from "../../components/about/OurGoal";
-import OurEngineer from "../../components/about/OurEngineer";
-import FeaturedProject from "../../components/landing-page/FeaturedProject";
-import ClientsReview from "../../components/landing-page/ClientReview";
-import CivilConstruction from "../../components/landing-page/CivilConstruction";
+import EngineeringStandards from "../../components/about/EngineeringStandards";
+import GoalVision from "../../components/about/GoalVision";
+import ProjectsShowcase from "../../components/shared/ProjectsShowcase";
+import ImageGallery from "../../components/about/ImageGallary";
 
-function Page() {
+const Page: React.FC = () => {
   return (
     <>
-      <OurGoal />
-      <EngineeringExcellence />
-      <OurEngineer />
-      <FeaturedProject />
-      <ClientsReview />
-      <CivilConstruction />
+      <GoalVision />
+      <ImageGallery />
+      <ProjectsShowcase />
+      <EngineeringStandards />
     </>
   );
-}
+};
 
 export default Page;

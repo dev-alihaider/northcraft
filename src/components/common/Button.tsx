@@ -1,13 +1,23 @@
 import React from "react";
+import { ButtonProps } from "./types";
 
-type Props = {
-  children?: React.ReactNode;
-  className?: string;
-};
-const Button: React.FC<Props> = ({ children, className }) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  className = "",
+  onClick,
+  type,
+  disabled = false,
+}) => {
   return (
     <div>
-      <button className={className}> {children}</button>
+      <button
+        type={type}
+        className={className}
+        onClick={onClick}
+        disabled={disabled}
+      >
+        {children}
+      </button>
     </div>
   );
 };
