@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
             NORTHCRAFT
           </h2>
         </div>
-        <div className="grid grid-cols-4 text-white gap-x-12 gap-y-4 ">
-          <div className=" md:col-span-2 col-span-4">
+        <div className="grid grid-cols-4 text-white gap-x-12 gap-y-4">
+          <div className="md:col-span-2 col-span-4">
             <h3 className="font-medium text-xl py-4">Excellence Assured</h3>
             <p className="font-normal text-sm leading-5">
               We have the confidence to provide the best service for you, especially in Waipapa, Far North, and the surrounding areas, with the support of professional and certified staff, high-quality materials, and structured work techniques. This allows us to ensure the timely completion of work.
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="lg:pl-6">
             <div>
-              <h3 className="font-medium text-xl py-4 ">Link</h3>
+              <h3 className="font-medium text-xl py-4">Link</h3>
               <ul className="font-normal flex sm:flex-col flex-row sm:space-x-0 space-x-2 text-sm leading-6">
                 {menuItems.map((item, index: number) => (
                   <li key={index}>

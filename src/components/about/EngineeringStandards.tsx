@@ -14,7 +14,7 @@ const EngineeringStandards: React.FC = () => {
           <div className="my-8 md:my-0 min-w-1/2 h-full pt-8 lg:pt-0">
             <h1 className="font-semibold large:text-6xl text-3xl text-center lg:text-left">
               Engineering Excellence
-            <div className="font-semibold pt-2 large:text-6xl text-3xl text-center lg:text-left ">
+            <div className="font-semibold pt-2 large:text-6xl text-3xl text-center lg:text-left">
               In Construction
             </div>
             </h1>

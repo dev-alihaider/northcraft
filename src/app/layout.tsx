@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${inter.variable} ${comforterBrush.variable} ${unlock.variable} `}
+        className={`${poppins.variable} ${inter.variable} ${comforterBrush.variable} ${unlock.variable}`}
       >
         <Navbar />
         {children}

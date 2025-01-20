@@ -17,7 +17,7 @@ const StatisticsSection: React.FC = () => {
           className="grid lg:grid-cols-5 md:grid-cols-5 w-full md:px-0 px-5 large:py-28 py-12"
           ref={ref}
         >
-          <div className=" md:grid lg:col-span-2 md:col-span-2 hidden large:items-end items-center justify-center">
+          <div className="md:grid lg:col-span-2 md:col-span-2 hidden large:items-end items-center justify-center">
             <img
               src={logoImg.src}
               alt="Northcraft logo"
@@ -25,7 +25,7 @@ const StatisticsSection: React.FC = () => {
             />
           </div>
           <motion.div
-            className="md:grid lg:col-span-3 md:col-span-3 text-white   sm:pl-0"
+            className="md:grid lg:col-span-3 md:col-span-3 text-white sm:pl-0"
             initial={{ x: "100vw", opacity: 0 }}
             animate={inView ? { x: 0, opacity: 1 } : {}}
             transition={{ type: "spring", stiffness: 50, damping: 10 }}

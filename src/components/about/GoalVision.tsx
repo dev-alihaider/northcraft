@@ -14,7 +14,7 @@ const GoalVision: React.FC = () => {
   return (
     <>
       <div>
-        <div className="relative w-full ">
+        <div className="relative w-full">
           <img
             src={carcrop.src}
             alt="Image"
@@ -24,7 +24,7 @@ const GoalVision: React.FC = () => {
         </div>
         <div className="bg-darkGray">
           <div
-            className="grid grid-cols-1 large:px-24 w-full lg:px-16 md:px-12 px-6  lg:py-28 md:py-16 py-12 items-center md:grid-cols-3"
+            className="grid grid-cols-1 large:px-24 w-full lg:px-16 md:px-12 px-6 lg:py-28 md:py-16 py-12 items-center md:grid-cols-3"
             ref={ref}
           >
             <motion.div
@@ -38,7 +38,7 @@ const GoalVision: React.FC = () => {
                   <h2 className="font-semibold text-blue large:text-6xl md:text-4xl text-2xl">
                     Our Goal
                   </h2>
-                  <h2 className="font-semibold text-blue  large:text-6xl md:text-4xl text-2xl">
+                  <h2 className="font-semibold text-blue large:text-6xl md:text-4xl text-2xl">
                     To The Better
                   </h2>
                 </div>

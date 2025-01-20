@@ -21,8 +21,8 @@ const ImageGallery: React.FC = () => {
 
   return (
     <>
-      <div className="bg-darkGray  relative z-0">
-        <div className=" p-4 rounded-lg shadow-lg">
+      <div className="bg-darkGray relative z-0">
+        <div className="p-4 rounded-lg shadow-lg">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {carouselsImages?.map((image) => (
               <div
