@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import carcrop from "../../../public/assets/images/crop2.jpeg";
-import northcraftMan from "../../../public/assets/images/northcraftMan.jpeg";
+import carcrop from "../../../public/assets/images/crop2.webp";
+import northcraftMan from "../../../public/assets/images/northcraftMan.webp";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -35,12 +35,12 @@ const GoalVision: React.FC = () => {
             >
               <div className="md:pr-10 mb-8 md:mb-0 min-w-1/2 md:grid md:col-span-2">
                 <div className="flex sm:flex-col flex-row sm:justify-start justify-center sm:gap-0 gap-1">
-                  <h1 className="font-semibold text-blue large:text-6xl md:text-4xl text-2xl">
+                  <h2 className="font-semibold text-blue large:text-6xl md:text-4xl text-2xl">
                     Our Goal
-                  </h1>
-                  <h1 className="font-semibold text-blue  large:text-6xl md:text-4xl text-2xl">
+                  </h2>
+                  <h2 className="font-semibold text-blue  large:text-6xl md:text-4xl text-2xl">
                     To The Better
-                  </h1>
+                  </h2>
                 </div>
                 <p className="font-normal large:text-xl lg:text-lg md:text-base text-sm text-white pt-6 md:pt-10 sm:text-left text-center">
                   Stephen has over 12 years experience in the building industry.
@@ -61,7 +61,7 @@ const GoalVision: React.FC = () => {
                   young daughter or out on the water spearfishing, a passionate
                   member of the spearfishing community Northcraft projects
                   offers sponsorship to local spearfishing events and
-                  competitions.
+                  competitions specially in the Waipapa and Far North area..
                 </p>
               </div>
             </motion.div>

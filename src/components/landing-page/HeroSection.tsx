@@ -1,5 +1,5 @@
 import React from "react";
-import carFull from "../../../public/assets/images/carFull.jpeg";
+import carFull from "../../../public/assets/images/carFull.webp";
 const HeroSection: React.FC = () => {
   return (
     <>
@@ -8,6 +8,7 @@ const HeroSection: React.FC = () => {
         style={{
           backgroundImage: `linear-gradient(to  bottom, rgba(25, 26, 25, 1), rgba(0, 0, 0, 0)),url(${carFull.src})`,
         }}
+        aria-label="Hero section background image"
       ></div>
     </>
   );

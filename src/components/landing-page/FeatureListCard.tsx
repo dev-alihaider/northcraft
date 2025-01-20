@@ -13,7 +13,7 @@ const FeatureListCard: React.FC = () => {
           ].map((value: string, i: number) => (
             <div className="flex gap-2 p-1" key={i}>
               <img src={checkIcon.src} alt="check icon" />
-              <p className="font-medium text-lg text-white">{value}</p>
+              <h3 className="font-medium text-lg text-white">{value}</h3>
             </div>
           ))}
         </div>
