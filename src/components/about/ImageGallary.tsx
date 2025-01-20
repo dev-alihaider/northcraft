@@ -6,9 +6,11 @@ import Button from "../common/Button";
 const ImageGallery: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [image, setImage] = useState<string | null>(null);
+  const [alt, setAltText] = useState<string | null>(null);
 
-  function handleOpen(url: string) {
+  function handleOpen(url: string, alt:string) {
     setImage(url);
+    setAltText(alt)
     setIsOpen(true);
   }
 
@@ -19,14 +21,14 @@ const ImageGallery: React.FC = () => {
 
   return (
     <>
-      <div className="bg-darkGray  relative z-0">
-        <div className=" p-4 rounded-lg shadow-lg">
+      <div className="bg-darkGray relative z-0">
+        <div className="p-4 rounded-lg shadow-lg">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {carouselsImages?.map((image) => (
               <div
                 key={image.id}
                 className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer"
-                onClick={() => handleOpen(image.url)}
+                onClick={() => handleOpen(image.url, image.title)}
               >
                 <img
                   src={image.url}
@@ -59,7 +61,7 @@ const ImageGallery: React.FC = () => {
             <div className="flex justify-center w-full h-full">
               <img
                 src={image}
-                alt="Selected"
+                alt={alt}
                 className="w-full h-full object-contain rounded"
               />
             </div>

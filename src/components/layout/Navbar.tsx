@@ -27,13 +27,13 @@ const Navbar: React.FC = () => {
             className="md:h-24 sm:h-20 h-16"
           />
         </Link>
-        <div className="hidden sm:flex flex-grow justify-center sm:space-x-3 md:space-x-5 lg:space-x-6 ">
+        <div className="hidden sm:flex flex-grow justify-center sm:space-x-3 md:space-x-5 lg:space-x-6">
           {Object.values(ROUTES).map((route) => (
             <div key={route.label}>
               <ActiveLink
                 href={route.path}
-                activeClassName=" text-blue underline underline-offset-[1.5rem]  "
-                className=" sm:text-base  md:text-xl lg:text-2xl font-medium "
+                activeClassName="text-blue underline underline-offset-[1.5rem]"
+                className="sm:text-base md:text-xl lg:text-2xl font-medium"
               >
                 {route.label}
               </ActiveLink>
@@ -64,10 +64,10 @@ const Navbar: React.FC = () => {
         className="absolute sm:top-36 top-28 left-0 w-full rounded-b-lg bg-darkGray flex flex-col items-center justify-center shadow-md sm:hidden z-50"
       >
         {Object.values(ROUTES).map((route) => (
-          <div key={route.label} className="w-full px-10 py-2 ">
+          <div key={route.label} className="w-full px-10 py-2">
             <ActiveLink
               href={route.path}
-              activeClassName=" text-blue"
+              activeClassName="text-blue"
               className="w-full transition-all"
             >
               <button onClick={() => setOpenMenu((e) => !e)}>

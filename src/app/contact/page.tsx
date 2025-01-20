@@ -1,5 +1,5 @@
 import React from "react";
-import car from "../../../public/assets/images/carcroped2.jpeg";
+import car from "../../../public/assets/images/carcroped2.webp";
 import ContactUsForm from "../../components/shared/ContactUsForm";
 const page: React.FC = () => {
   return (

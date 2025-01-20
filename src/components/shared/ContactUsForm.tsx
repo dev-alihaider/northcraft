@@ -62,17 +62,15 @@ export const ContactUsForm: React.FC = () => {
 
   return (
     <div className="md:col-span-2 col-span-1 bg-blue rounded-2xl text-white">
-      <div className="large:pt-11 lg:pt-7 pt-4 large:px-16  lg:px-8 px-5">
-        <h1 className="font-medium text-2xl  text-center sm:text-left">
+      <div className="large:pt-11 lg:pt-7 pt-4 large:px-16 lg:px-8 px-5">
+        <h2 className="font-medium text-2xl text-center sm:text-left">
           Request A Estimate
-        </h1>
+        </h2>
         <p className="font-normal large:text-xl lg:text-lg sm:text-base text-sm large:pt-6 lg:pt-4 pt-2 text-center sm:text-left">
-          Complete control over products allow us to our customers the best
-          quality prices and services. We take great pride in everything that we
-          do.
+          Complete control over products allows us to offer our customers, especially in Waipapa, Far North, and the surrounding areas, the best quality, prices, and services. We take great pride in everything that we do.
         </p>
         <form onSubmit={handleSubmit}>
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-5 ">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-5">
             <Input
               type="text"
               name="name"
@@ -93,7 +91,7 @@ export const ContactUsForm: React.FC = () => {
             />
           </div>
 
-          <div className="grid md:grid-cols-2 grid-cols-1  gap-4 pt-4">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-4">
             <Input
               type="text"
               name="phoneNumber"
@@ -141,7 +139,7 @@ export const ContactUsForm: React.FC = () => {
               value={formData.description}
               onChange={handleChange}
               placeholder="Additional Details!"
-              className=" col-span-2 h-full text-black large:pb-24  sm:pb-16 pb-8 placeholder:text-grayish large:py-6 lg:py-5 sm:py-4 py-2 large:placeholder:text-xl lg:placeholder:text-lg md:placeholder:text-base placeholder:xs placeholder:font-normal large:pl-16 lg:pl-6 pl-4  rounded-2xl"
+              className="col-span-2 h-full text-black large:pb-24 sm:pb-16 pb-8 placeholder:text-grayish large:py-6 lg:py-5 sm:py-4 py-2 large:placeholder:text-xl lg:placeholder:text-lg md:placeholder:text-base placeholder:xs placeholder:font-normal large:pl-16 lg:pl-6 pl-4  rounded-2xl"
             />
           </div>
           <Button

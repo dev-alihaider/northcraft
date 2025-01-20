@@ -36,7 +36,7 @@ const FeaturedCarousel: React.FC<CarouselsProps> = ({ images }) => {
                 alt={image.title}
                 className="w-80 h-96 md:w-96 lg:w-[30.3rem] md:h-[32rem] object-cover rounded-2xl"
               />
-              <div className=" text-white -translate-y-24  sm:text-lg md:text-xl space-y-1 lg:text-2xl">
+              <div className="text-white -translate-y-24 sm:text-lg md:text-xl space-y-1 lg:text-2xl">
                 <h3 className="font-medium whitespace-nowrap text-2xl text-center sm:text-xl md:text-2xl lg:text-3xl">
                   {image.title}
                 </h3>

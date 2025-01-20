@@ -32,7 +32,7 @@ const unlock = Unlock({
 export const metadata: Metadata = {
   title: "North Craft Construction - Expert Construction Services",
   description:
-    "North Craft Construction provides top-notch construction services, specializing in residential, commercial, and industrial projects. We are committed to delivering quality craftsmanship, timely project completion, and customer satisfaction.",
+    "North Craft Construction delivers quality residential, commercial, and industrial construction with expert craftsmanship, timely completion, and satisfaction.",
   icons: {
     icon: "/assets/icons/northcraft.svg",
   },
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${inter.variable} ${comforterBrush.variable} ${unlock.variable} `}
+        className={`${poppins.variable} ${inter.variable} ${comforterBrush.variable} ${unlock.variable}`}
       >
         <Navbar />
         {children}
