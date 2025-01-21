@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import northcraft from "../../../public/assets/icons/Northcraft.svg";
 import Image from "next/image";
 import Button from "../../components/common/Button";
 import ActiveLink from "../../components/common/ActiveLink";
@@ -22,7 +21,7 @@ const Navbar: React.FC = () => {
       <nav className="flex relative sm:h-36 h-28 items-center bg-opacity-70 backdrop-blur bg-darkGray w-full top-0 sm:sticky z-50">
         <Link href="/" className="large:pl-28 lg:pl-28 md:pl-28 sm:pl-16 pl-2">
           <Image
-            src={northcraft}
+            src="/assets/icons/Northcraft.svg"
             alt="Northcraft-logo"
             className="md:h-24 sm:h-20 h-16"
           />
