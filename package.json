@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve@latest out",
     "lint": "next lint"
   },
   "dependencies": {
@@ -29,6 +29,7 @@
     "react-router-dom": "^7.1.0",
     "react-slick": "^0.30.3",
     "react-toastify": "^11.0.2",
+    "serve": "^14.2.4",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.15",
     "tailwind-scrollbar-hide": "^2.0.0"
