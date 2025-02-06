@@ -17,7 +17,7 @@ export type InputFieldProps = {
   className?: string;
   placeholder?: string;
   name?: string;
-  type?: "text" | "password" | "number";
+  type?: "text" | "password" | "number"|"email";
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value?: string | number;
   required?: boolean;

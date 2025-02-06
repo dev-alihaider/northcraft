@@ -23,3 +23,44 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+.react-international-phone-input-container .react-international-phone-input {
+  height: 72px !important;
+  width: 100% !important;
+  border-radius: 0 16px 16px 0 !important;
+}
+
+.react-international-phone-country-selector-button {
+  height: 72px !important;
+  padding: 0 8px !important;
+  border-radius: 16px 0 0 16px !important;
+}
+
+.react-international-phone-input-container:focus-within .react-international-phone-input,
+.react-international-phone-input-container:focus-within .react-international-phone-country-selector-button {
+  border: 1px solid black !important;
+}
+
+@media (max-width: 1024px) {
+  .react-international-phone-input-container .react-international-phone-input {
+      height: 56px !important;
+  }
+
+  .react-international-phone-country-selector-button {
+      height: 56px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .react-international-phone-input-container .react-international-phone-input {
+      height: 44px !important;
+      border-radius: 0 12px 12px 0 !important;
+
+  }
+
+  .react-international-phone-country-selector-button {
+      height: 44px !important;
+      border-radius: 12px 0 0 12px !important;
+  }
+}
